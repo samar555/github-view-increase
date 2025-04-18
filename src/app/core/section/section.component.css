@@ -1,0 +1,48 @@
+.bg-color{
+    background-image: linear-gradient(to bottom, #25415e, #0e0d0d);
+}
+.section-background{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* height: 10000/ */
+}
+
+
+.rotate-img {
+    height: 270px;
+    width: 270px;
+    transform: rotate(90deg);
+  }
+  .btn-pink{
+    background-color:rgb(219, 23, 105) ;
+
+  }
+  .btn-pink:hover{
+   color: white;
+    
+  }
+  .btn-gray{
+    background-color:gray;
+  }
+  .btn-gray:hover{
+    color: white;
+  }
+  .middle-page{
+    background-color: #0e0d0d;
+ 
+  }
+  .section-background-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+  }
+  .vertical-line {
+    width: 0;            /* No width */
+    height:80%;       /* Vertical height */
+    border-left: 2px solid white; /* Vertical line */
+    margin: 10px;        /* Optional: Space around the line */
+  }
