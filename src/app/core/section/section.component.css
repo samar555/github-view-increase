@@ -10,7 +10,15 @@
     /* height: 10000/ */
 }
 
-
+.btn-warning{
+  border: 2px solid black;
+  padding-right: 6px;
+  border-radius: 550px;
+  background: -webkit-linear-gradient(rgb(247, 247, 241), rgb(68, 68, 2));
+  color: rgb(20, 19, 19);
+  font-weight: bold;
+  box-shadow: 2px 2px yellow;
+}
 .rotate-img {
     height: 270px;
     width: 270px;
