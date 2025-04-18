@@ -1,0 +1,5 @@
+.bg-black{
+    background-image: linear-gradient(to bottom, #25415e, #0e0d0d);
+    height: 100vh;
+    width: 100vw;
+}
