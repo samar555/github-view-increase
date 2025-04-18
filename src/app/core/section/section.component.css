@@ -38,11 +38,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 500px;
+   
   }
   .vertical-line {
     width: 0;            /* No width */
     height:80%;       /* Vertical height */
     border-left: 2px solid white; /* Vertical line */
     margin: 10px;        /* Optional: Space around the line */
+  }
+  .last-page{
+    background-color: #0e0d0d;
+   
+    
+ 
+  }
+  .text-gradient {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
