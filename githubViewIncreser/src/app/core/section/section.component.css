@@ -1,0 +1,14 @@
+.section-background{
+    background-image: linear-gradient(to bottom, #25415e, #080808);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* height: 10000/ */
+}
+
+.rotate-img {
+    height: 270px;
+    width: 270px;
+    transform: rotate(90deg);
+  }
