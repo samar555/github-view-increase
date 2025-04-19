@@ -2,4 +2,26 @@
     background-image: linear-gradient(to bottom, #25415e, #0e0d0d);
     height: 100vh;
     width: 100vw;
+   
+
+}
+.center{
+    display: flex;
+    
+    /* margin: 2px; */
+    padding: 2px;
+    justify-content: center;
+}
+.input-css{
+    width: 30vw;
+}
+.button{
+    
+    background-color: yellow;
+    border-radius: 50px;
+    box-shadow:2px 2px rgb(138, 121, 121)
+   
+}
+.button:hover{
+    color: rgb(170, 23, 72);
 }
