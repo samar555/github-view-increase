@@ -1,20 +1,57 @@
-<div class="bg-black min-vh-100 d-flex justify-content-center align-items-center">
-   <div class="card border-success mb-3 text-center bg-dark text-white" style="width: 50vw; height: 50vh;">
-      <div class="card-header mb-5">Enter your detail</div>
+<div
+  class="bg-black min-vh-100 d-flex justify-content-center align-items-center position-relative"
+>
+  @if(isloading){
+  <!-- Transparent Loading Overlay -->
+  <div class="loading-overlay d-flex justify-content-center align-items-center">
+    <img src="loading.gif" alt="Loading..." class="loading-spinner" /><br />
+    <div>
+      <h3 class="text-center text-white">incresing view please wait....</h3>
+    </div>
+  </div>
 
-      <div class="input-group mb-5">
-         <span class="input-group-text" id="basic-addon1"><i class="fa fa-github"></i></span>
-         <input type="text" class="input-css form-control " placeholder="Enter github user name i.e samar555" aria-label="Username" aria-describedby="basic-addon1">
-      </div>
+  }
+  <div
+    class="card border-success mb-3 text-center bg-dark text-white"
+    style="width: 50vw; height: 50vh"
+  >
+    <div class="card-header mb-5">Enter your detail</div>
+    @if(iserror){
+    <div class="text-danger">error</div>
+    }
 
-      <div class="input-group mb-5">
-         <span class="input-group-text"><i class="fa fa-calculator"></i></span>
-         <input type="text" placeholder="No of views" class="input-css form-control" aria-label="Amount (to the nearest dollar)">
-         <span class="input-group-text">.00</span>
-      </div>
+    <div class="input-group mb-5">
+      <span class="input-group-text" id="basic-addon1"
+        ><i class="fa fa-github"></i
+      ></span>
+      <input
+        type="text"
+        class="input-css form-control"
+        [(ngModel)]="guthubUrl"
+        name="guthubUrl"
+        placeholder="Enter github user name i.e samar555"
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+      />
+    </div>
 
-      <div class="text-center">
-         <button class="btn btn-lg button"><i class="fa fa-telegram"> </i> submit</button>
-      </div>
-   </div>
+    <div class="input-group mb-5">
+      <span class="input-group-text"><i class="fa fa-calculator"></i></span>
+      <input
+        type="text"
+        placeholder="No of views"
+        [(ngModel)]="number"
+        name="number"
+        class="input-css form-control"
+        aria-label="Amount"
+      />
+      <span class="input-group-text">.00</span>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-lg button" (click)="getdata()">
+        <i class="fa fa-telegram"></i> submit
+      </button>
+    </div>
+  </div>
 </div>
